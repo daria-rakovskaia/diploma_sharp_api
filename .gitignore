@@ -1,0 +1,86 @@
+## Игнорировать файлы сборки и бинарники ##
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.config
+*.xml
+
+## Настройки IDE ##
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userprefs
+*.userosscache
+*.sln.docstates
+
+## NuGet ##
+[Nn]uget/
+*.nupkg
+packages/
+**/packages/repositories.config
+project.lock.json
+project.assets.json
+
+## Логи и временные файлы ##
+[Tt]humbs.db
+*.log
+*.tlog
+*.pidb
+*.ilk
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+*.stackdump
+*.crashlog
+
+## Тестовые результаты ##
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+.coverage
+
+## Docker ##
+**/.dockerignore
+**/Dockerfile
+**/docker-compose.yml
+**/docker-compose.*.yml
+
+## Локальные настройки Azure ##
+local.settings.json
+
+## macOS ##
+.DS_Store
+
+## Linux ##
+*~
+
+## JetBrains Rider ##
+*.sln.iml
+
+## Unity (дополнительно) ##
+# [Ll]ibrary/
+# [Tt]emp/
+# [Oo]bj/
+# [Bb]uild/
+# Assets/AssetStoreTools*
+# *.csproj
+# *.unityproj
+# *.sln
+# *.suo
+# *.tmp
+# *.user
+# *.userprefs
+# *.pidb
+# *.booproj
+# *.svd
+# *.pdb
+# *.opendb
+# *.VC.db
