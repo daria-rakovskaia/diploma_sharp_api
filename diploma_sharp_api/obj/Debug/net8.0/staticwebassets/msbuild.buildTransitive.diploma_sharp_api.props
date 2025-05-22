@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/diploma_sharp_api.props" />
+</Project>
