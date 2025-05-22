@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("diploma_sharp_api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+728115aa96ab2dff4f32addd09c8a64048326c7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("diploma_sharp_api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("diploma_sharp_api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
