@@ -8,7 +8,7 @@ public class AnalysisService : IAnalysisService
     private readonly List<MetadataReference> _defaultReferences;
 
     private string FormatCode(string code)
-    { return code.Replace("\\n", "\n"); }
+    { return code.Replace("\\n", "\n").Trim(); }
 
     public AnalysisService()
     {
@@ -31,11 +31,11 @@ public class AnalysisService : IAnalysisService
             .ToList();
     }
 
-    public CodeAnalysisResult AnalyzeCode(string code)
+    public CodeAnalysisResult AnalyzeCode(CodeSample code)
     {
-        code = FormatCode(code);
+        string formattedCode = FormatCode(code.Code);
         var result = new CodeAnalysisResult();
-        var syntaxTree = CSharpSyntaxTree.ParseText(code);
+        var syntaxTree = CSharpSyntaxTree.ParseText(formattedCode);
         var compilation = CSharpCompilation.Create( // создаёт объект компиляции
             "StaticCodeAnalysis", // имя сборки
             new[] { syntaxTree }, // синтаксическое дерево (исходный код)

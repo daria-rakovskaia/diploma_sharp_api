@@ -1,3 +1,4 @@
+using diploma_sharp_api.AnalysisModels;
 using diploma_sharp_api.Services.AnalysisService;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,7 +16,7 @@ namespace diploma_sharp_api.Controllers
         }
 
         [HttpPost]
-        public IActionResult AnalyzeCode(string code)
+        public IActionResult AnalyzeCode(CodeSample code)
         {
             var result = _analysisService.AnalyzeCode(code);
             return Ok(result);

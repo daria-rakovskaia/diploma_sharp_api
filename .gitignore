@@ -1,86 +1,115 @@
-## Игнорировать файлы сборки и бинарники ##
+### .NET Core ###
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
 [Bb]in/
 [Oo]bj/
-*.exe
-*.dll
-*.pdb
-*.cache
-*.config
-*.xml
+[Ll]og/
+[Ll]ogs/
 
-## Настройки IDE ##
+# Roslyn cache directories
+*.esproj
 .vs/
 .vscode/
-.idea/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NuGet Packages
+*.nupkg
+.nuget/
+packages/
+
+# Local NuGet cache
+.nuget/packages/
+
+# Ignore NuGet credential cache
+nuget.config
+!nuget.Config
+
+# Backup & swap files
+*.bak
+*.swp
+*~.
+
+# Visual Studio files
 *.user
 *.suo
 *.userprefs
-*.userosscache
-*.sln.docstates
-
-## NuGet ##
-[Nn]uget/
-*.nupkg
-packages/
-**/packages/repositories.config
-project.lock.json
-project.assets.json
-
-## Логи и временные файлы ##
-[Tt]humbs.db
-*.log
-*.tlog
-*.pidb
-*.ilk
-*.msi
-*.msix
-*.msm
-*.msp
-*.lnk
-*.stackdump
-*.crashlog
-
-## Тестовые результаты ##
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
-*.trx
-*.coverage
-.coverage
-
-## Docker ##
-**/.dockerignore
-**/Dockerfile
-**/docker-compose.yml
-**/docker-compose.*.yml
-
-## Локальные настройки Azure ##
-local.settings.json
-
-## macOS ##
-.DS_Store
-
-## Linux ##
-*~
-
-## JetBrains Rider ##
+*.vsp
+*.vssscc
+*.vspscc
 *.sln.iml
 
-## Unity (дополнительно) ##
-# [Ll]ibrary/
-# [Tt]emp/
-# [Oo]bj/
-# [Bb]uild/
-# Assets/AssetStoreTools*
-# *.csproj
-# *.unityproj
-# *.sln
-# *.suo
-# *.tmp
-# *.user
-# *.userprefs
-# *.pidb
-# *.booproj
-# *.svd
-# *.pdb
-# *.opendb
-# *.VC.db
+# Rider/ReSharper
+*.DotSettings
+_ReSharper.*
+*.sln.dot
+
+# CodeRush
+.cr/
+
+# DotCover
+*.dotCover
+
+# Azure Functions
+func/
+azurite/
+
+# Output directories
+/publish/
+/artifacts/
+
+# Fody - auto-generated XML schema
+FodyWeavers.xsd
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Docker
+.dockerignore
+docker-compose.*.yml
+docker-compose.*.yaml
+docker-compose.override.*
+docker-compose.vs.*
+.docker/
+Dockerfile*
+*/Dockerfile*
+**/Dockerfile*
+.env
+.env.local
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+*.log.*
+
+# Temp files
+*.tmp
+*.temp
+
+# VS Code
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
