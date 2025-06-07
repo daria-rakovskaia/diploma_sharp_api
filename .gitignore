@@ -1,115 +1,44 @@
-### .NET Core ###
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Ww][Ii][Nn]32/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-[Ll]ogs/
+bin/
+obj/
 
-# Roslyn cache directories
-*.esproj
-.vs/
-.vscode/
-
-# MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
-
-# NuGet Packages
-*.nupkg
-.nuget/
-packages/
-
-# Local NuGet cache
-.nuget/packages/
-
-# Ignore NuGet credential cache
-nuget.config
-!nuget.Config
-
-# Backup & swap files
-*.bak
-*.swp
-*~.
-
-# Visual Studio files
+# User-specific files
 *.user
 *.suo
-*.userprefs
-*.vsp
-*.vssscc
-*.vspscc
+*.userosscache
+*.sln.docstates
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Rider
+.idea/
 *.sln.iml
 
-# Rider/ReSharper
-*.DotSettings
-_ReSharper.*
-*.sln.dot
-
-# CodeRush
-.cr/
-
-# DotCover
-*.dotCover
-
-# Azure Functions
-func/
-azurite/
-
-# Output directories
-/publish/
-/artifacts/
-
-# Fody - auto-generated XML schema
-FodyWeavers.xsd
-
-# SQL Server files
-*.mdf
-*.ldf
-
-# Docker
-.dockerignore
-docker-compose.*.yml
-docker-compose.*.yaml
-docker-compose.override.*
-docker-compose.vs.*
-.docker/
-Dockerfile*
-*/Dockerfile*
-**/Dockerfile*
-.env
-.env.local
-
-# macOS
-.DS_Store
-
-# Linux
-*~
-
-# Windows
-Thumbs.db
-desktop.ini
+# VS Code
+.vscode/
 
 # Logs
 *.log
-*.log.*
 
-# Temp files
-*.tmp
-*.temp
+# ASP.NET files
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/appsettings.*.json.user
 
-# VS Code
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
+# Dotnet specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+*.symbols.nupkg
+
+# Others
+*.db
+*.sqlite
